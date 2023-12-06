@@ -41,7 +41,7 @@ class TreatmentsRelationManager extends RelationManager
                 Tables\Columns\TextColumn::make('price')
                         ->money('BRL')
                         ->sortable(),
-                Tables\Columns\TextColumn::make('created_at')->dateTime()
+                Tables\Columns\TextColumn::make('created_at')->dateTime('d/m/Y h:i A')
             ])
             ->filters([
                 //
